@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Eye Catching Apps
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <nav>
+            <img src="content://com.android.providers.media.documents/document/image%3A1000369096" width="130" height="60"></img>
+            <div id="Menu">
+              <b><a href=https://www.facebook.com>About</a> 
+                <a href="ussu.ie">Contact</a> 
+                <a href="Mata Login or Signup.html">Login/Signup</a>
+                </b>
+            </div>
+        </nav> 
+        <marquee class="mark"><span class="blink"><font color="white" face="Courier New"><em>"Eye got you!"</font></em></span></marquee>
+    </head>
+    <body bgcolor="#26292B">   
+       <p>
+          <font color="white" size="5"> <strong> Welcome Back!👋</strong></font>
+       </p>
+       <p>
+         <font color="white"> <em> Here's some <span style="color:yellow">eye</span> catching apps!</em></font>
+       </p>
+       <b><p class="list">
+          <img src="content://com.android.providers.media.documents/document/image%3A1000391889" width="30" height="30"> <tt>Facebook</tt>
+          <br><span class="details">&clubs; Find friends, watch live videos, play games & save photos in your social network.&clubs;</span><br>
+          <a href="content://com.android.providers.media.documents/document/image%3A1000391889" download="content://com.android.providers.media.documents/document/image%3A1000391889"><button class="btn" style="width:20%"><i class="fa fa-download"></i> Install</button><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </a>
+          
+          </p>
+       
+       <p class="list">
+          <tt>Instagram</tt>
+          
+       </p>
+       <p class="list">
+          <tt>Twitter </tt>
+       </p></b>
+    </body>
+</html>
