@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #fff;
+  color: black;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  padding: 20px;
+  border-radius: 100px;
+  transition: background-color 0.5s ease;
+  cursor: pointer; /
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.menu li:hover {
+  background-color: #00b4d8;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s ease; 
+}
+
+.menu li:hover a {
+  color: #fff;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.menu li.login {
+  background-color: #00b4d8;
+  border-radius: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menu li.login:hover {
+  background-color:#00b4d8;
+  border-radius: 100px;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+  
+}
+.menu li.login:hover a {
+  color:  #fff;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.menu li.login a {
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cover-content {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  background: black;
+  height: 550px;
+  align-items: center;
+}
+
+.cover-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.cover-content h2,
+.cover-content p,
+.cover-content button {
+  position: relative;
+  z-index: 1; 
+}
+
+.cover-content h2 {
+  color: white;
+  margin-left: 200px;
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+
+.cover-content p {
+  color: white;
+  margin-left: 200px;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.cover-content button {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 200px;
+  border-radius: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color:#00b4d8;
+}
+
+.cover-content button:hover {
+  background-color:#fff;
+  border-radius: 100px;
+  border-color: black;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 5px;
+  background-color: #00b4d8;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card {
+  position: relative;
+  margin: 10px;
+  height: 400px;
+  width:250px;
+  border: 3px solid #00b4d8;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  
+}
+
+.card img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .backgroundimg {
+  opacity: 0.2;
+}
+
+.card:hover .logocard {
+  opacity: 1;
+}
+
+.card:hover{
+  background: black;
+}
+
+.logocard {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 100px;
+  height: 100px;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  background: black;
+  height: 700px;
+  background: white;
+  margin-left: 150px;
+}
+
+.content h2 {
+  color: #00b4d8;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.content h2 img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content p {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.content .img-container {
+  margin-right: 20px;
+}
+
+.contentimg {
+  
+  height: 100px;
+  width: 100px;
+}
+
+.content-img {
+  margin-top:30px;
+  height: 500px;
+  width: auto;
+  position: relative;
+  margin-left: 80px;
+  margin-right: 20px;
+  border-radius: 5%;
+  box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.2);
+}
+
+.checkmark{
+  font-size: 50px;
+  color: #00b4d8;
+}
+
+#install {
+  font-size: 25px;
+  margin-top: 5px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 5px;
+  padding-left: 147px;
+  padding-right: 147px;
+  background-color: #00b4d8;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+#install:hover {
+  color:black;
+  background-color: #fff;
+  border-color: #00b4d8;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+#goto {
+  font-size: 25px;
+  margin-top: 5px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #00b4d8;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+#goto:hover {
+  color:black;
+  background-color: #fff;
+  border-color: #00b4d8;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+#install2 {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #000;
+  border-radius: 100px;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-color: #00b4d8;
+  cursor: pointer;
+}
+
+#install2:hover {
+  color:white;
+  background-color: #00b4d8;
+  border-color: #fff;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.mark {
+  margin-top: 20;
+  margin-bottom: 20;
+  color: #00b4d8;
+}
+
+.blink {
+  animation: blink 0.3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  51% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
